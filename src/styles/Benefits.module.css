@@ -1,0 +1,74 @@
+.benefits {
+  padding: 120px 20px;
+  background-color: #000;
+  border-bottom: 1px solid #222;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+.card {
+  background: #111;
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid #333;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #1a1a1a;
+  border-color: #444;
+}
+
+.cardIcon {
+  margin-bottom: 25px;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0070f3;
+}
+
+.cardIcon img {
+  filter: invert(40%) sepia(93%) saturate(2300%) hue-rotate(200deg) brightness(100%) contrast(102%);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #f3f4f6;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #9ca3af;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2.8rem;
+  }
+}

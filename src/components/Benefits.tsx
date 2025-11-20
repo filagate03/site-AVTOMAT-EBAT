@@ -1,6 +1,5 @@
 'use client';
-
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import styles from '@/styles/Benefits.module.css';
 
@@ -22,7 +21,7 @@ const benefits = [
   },
 ];
 
-const cardVariants = {
+const cardVariants: Variants = {
   offscreen: {
     y: 50,
     opacity: 0,

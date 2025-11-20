@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = ".next" # Next.js outputs to .next for SSR/ISR
+
+# If you're using Next.js API routes, Netlify will automatically
+# detect and deploy them as serverless functions.
+# You might need the Netlify Next.js Build Plugin (will be suggested by Netlify)
+# or configure functions directory if using a custom setup.
+# functions = "netlify/functions"

@@ -1,0 +1,96 @@
+.contactForm {
+  padding: 80px 20px;
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #111;
+}
+
+.input::placeholder {
+  color: #888;
+}
+
+.button {
+  background-color: #fff;
+  color: #0070f3;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.successMessage h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.error {
+  margin-top: 10px;
+  color: #ffdddd;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .inputGroup {
+    grid-template-columns: 1fr;
+  }
+}

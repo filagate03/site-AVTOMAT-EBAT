@@ -1,0 +1,91 @@
+.howItWorks {
+  padding: 120px 20px;
+  background-color: #000;
+  border-bottom: 1px solid #222;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: #333;
+  top: 10px;
+  bottom: 10px;
+  left: 35px;
+  margin-left: -0.5px;
+}
+
+.step {
+  position: relative;
+  width: 100%;
+  padding-left: 100px;
+  margin-bottom: 60px;
+}
+
+.stepNumber {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.stepContent {
+  position: relative;
+  padding-top: 5px;
+}
+
+.stepTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #f3f4f6;
+}
+
+.stepDescription {
+  font-size: 1rem;
+  color: #9ca3af;
+  line-height: 1.7;
+}
+
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2.8rem;
+  }
+  .timeline::after {
+    left: 36px;
+  }
+  .step {
+    padding-left: 90px;
+  }
+}

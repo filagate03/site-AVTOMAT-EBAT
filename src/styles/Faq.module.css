@@ -1,0 +1,127 @@
+.faq {
+  padding: 120px 20px;
+  background-color: #000;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 80px;
+}
+
+.faqItem {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.faqItem:hover {
+  background: #1a1a1a;
+}
+
+.question {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #f3f4f6;
+  background: none;
+  border: none;
+}
+
+.icon {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #888;
+  transition: transform 0.3s ease;
+}
+
+.answer {
+  padding: 0 25px 25px 25px;
+}
+
+.answer p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #9ca3af;
+  max-width: 95%;
+}
+
+/* CTA Section */
+.ctaSection {
+  margin-top: 80px;
+  padding: 50px;
+  text-align: center;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 24px;
+}
+
+.ctaSection h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.ctaSection p {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-bottom: 30px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #0070f3;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 9999px; /* Pill shape */
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  background: #005bb5;
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2.8rem;
+  }
+  .question {
+    font-size: 1.1rem;
+    padding: 20px;
+  }
+  .answer p {
+    font-size: 1rem;
+  }
+}
